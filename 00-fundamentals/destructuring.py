@@ -8,3 +8,8 @@ if __name__=="__main__":
 
     for name, age in friends:
         print(f"{name} is {age} years old.")
+
+    # dictionary destructuring
+    friends = {"Anne": 32, "Mark": 25, "Tom": 41, "Jen": 32}
+    for key, value in friends.items():
+        print(f"{key}: {value}")
