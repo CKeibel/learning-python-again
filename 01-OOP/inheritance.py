@@ -16,6 +16,12 @@ class WorkingStudent(Student):
         super().__init__(name, school)
         self.salary = salary
 
+    """
+        use decorator to access method like a property without brackets
+        -> only works only when method has no parameters
+        @property
+    """
+    @property
     def weekly_salary(self):
         return self.salary * 19
 
@@ -31,6 +37,7 @@ def main():
     anna.grades.append(95)
     anna.grades.append(80)
     print(anna.average_grades())
+    print(anna.weekly_salary)
 
 
 if __name__ == "__main__":
